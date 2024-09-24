@@ -10,10 +10,16 @@ public interface EmployeeService {
 
     public List<Employee> getEmployees();
 
-    public Employee getById(String empCode);
+    public Employee getById(int empId);
 
-    public Employee updatEmployee(Employee employee, String empCode);
+    public Employee updatEmployee(Employee employee, int empId);
 
-    public void delete(String empCode);
+    public void delete(int empId);
+
+    public String getEmployeeCode(Employee employee);
+
+    public String LoginEmployee(Employee employee);
+
+    public Employee changeRole(Employee employee, int empId);
 
 }
